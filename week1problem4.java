@@ -15,9 +15,14 @@ class D
         while(n>1)
         {
             count+=1;
-            if((n&1)==1)
+            if(n==3)
             {
-                if ((n >> 1) & 1) == 0)
+                count=count+1;
+                n=n/10;
+            }
+            else if((n&1)==1)
+            {
+                if (((n >> 1) & 1) == 0)
                 {
                     n-=1;
                 }
